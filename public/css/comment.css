@@ -1,0 +1,415 @@
+ body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font:400 14px/1.5 'Hiragino Sans GB','WenQuanYi Micro Hei',tahoma,sans-serif;
+	color: #666;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+img{
+	border:0;
+	overflow: hidden;
+}
+.header{
+	/*position: fixed;*/
+	overflow: hidden;
+	height: 80px;
+    top: 0;
+    left:0;
+    z-index: 999;
+    width: 100%;
+    min-width: 1200px;
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
+}
+.header .header_inner{
+	width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    overflow: hidden;
+}
+.header_inner .logo{
+	display: block;
+	float: left;
+    width: 133px;
+    height: 80px;
+	background: url(/images/s0.meituan.net.png) no-repeat -536px -748px; 
+	/*background-size: contain;   */
+}
+.header .welcome{
+    font-size:30px;
+    color: #333;line-height: 80px;
+    margin-left: 50px;
+}
+.welcome p{
+     margin-left: 30px;
+     float: left;
+     margin-right: 15px;
+}
+.welcome i{
+    color: orange;
+}
+.banner{
+	width: 100%;
+    min-width: 1200px;
+    background: #392f59;
+}
+.banner .content{
+	width: 1200px;
+    margin: 0 auto;
+    height: 376px;
+    position: relative;
+}
+.content .picInfo{
+	width: 300px;
+    float: left;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    z-index: 9;
+}
+.content .picInfo .avater_shadow{
+	position: relative;
+    margin: 0 30px;
+    width: 240px;
+    height: 330px;
+    padding-bottom: 40px;
+}
+.content .picInfo .avater_shadow img{
+	border: 4px solid #fff;
+    height: 322px;
+    width: 232px;
+}
+.celeInfo{
+	position: absolute;
+    margin-right: 30px;
+    margin-left: 300px;
+    margin-top: 70px;
+    height: 300px;
+}
+.celeInfo .movie{
+	position: relative;
+    color: #fff;
+    font-size: 14px;
+    z-index: 1;
+}
+.celeInfo .movie .name{
+	width: 900px;
+    margin-top: 0;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 64px;
+}
+.celeInfo .movie .ename{
+	width: 340px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+.celeInfo .movie .ellipsis{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.celeInfo .movie ul{
+	width: 250px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.celeInfo .movie ul li{
+	margin: 12px 0;
+    line-height: 100%;
+}
+.celeInfo .buyBtn{
+	position: absolute;
+    bottom: 20px;
+}
+.buyBtn .action a{
+	cursor: pointer;
+    float: left;
+    display: block;
+    width: 120px;
+    height: 25px;
+    background-color: #756189;
+    margin-right: 10px;
+    padding-top: 11px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 2px;
+}
+.buyBtn .buy{
+	display: inline-block;
+	margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0;
+    color: #fff;
+    background-color: #df2d2d;
+}
+ .celeInfo .movie_container{
+	position: absolute;
+    top: 75px;
+    left: 342px;
+} 
+.celeInfo .movie_container .movie-index{
+	margin-bottom: 16px;
+    color: #fff;
+}
+.celeInfo .movie_container .movie-index .movie-index-title{
+	font-size: 12px;
+    margin-bottom: 8px;
+}
+.movie_container .movie-index .movie-index-content {
+    overflow: hidden;
+}
+.movie-index-content .info-num{
+	font-size: 30px;
+    color: #ffc600;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.movie-index-content .index-right{
+	margin-left: 54px;
+    font-size: 12px;
+}
+.movie-index .movie-index-content .no-info{
+	display: inline-block;
+    font-size: 24px;
+    color: #9c87b8;
+   
+}
+.movie-index .box .stonefont {
+    font-size: 30px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main-content-container {
+    margin-top: 80px;
+}
+.main-content-container>div.main-content {
+    width: 730px;
+    float: left;
+}
+.tab-container .tab-title-container {
+    border-bottom: 2px solid #eee;
+}
+.tab-container .tab-title-container .tab-title.active {
+    color: #ef4238;
+    border-bottom-color: #ef4238;
+}
+.tab-container .tab-title-container .tab-title {
+    cursor: pointer;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 100%;
+    border-bottom: 2px solid transparent;
+}
+.tab-desc {
+    margin-top: 40px;
+}
+.module {
+    width: 750px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.module .mod-title h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+}
+.module .mod-content {
+    margin-top: 20px;
+    color: #333;
+    overflow: hidden;
+}
+.tab-desc .dra {
+    font-size: 14px;
+    line-height: 26px;
+}
+.module .mod-title .more {
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    padding-right: 14px;
+   
+}
+.celebrity-container {
+    font-size: 16px;
+    color: #333;
+}
+.tab-desc .celebrity-container .celebrity-group:first-child {
+    margin-left: 0;
+    float:left;
+}
+.celebrity-container .celebrity-type {
+    margin-bottom: 16px;
+}
+.celebrity-container .celebrity-list {
+    margin-left: -20px;
+}
+.celebrity-container .celebrity {
+    float: left;
+    width: 128px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tab-desc .celebrity-container .celebrity-group .celebrity {
+    margin-bottom: 0;
+}
+.celebrity-container .celebrity .portrait {
+    margin-bottom: 6px;
+    width: 128px;
+    height: 170px;
+    overflow: hidden;
+}
+.celebrity-container .celebrity .portrait img {
+    width: 128px;
+    height: 170px;
+}
+.tab-desc .album>div {
+    float: left;
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+}
+.tab-desc .album>div:first-child, .tab-desc .album>div:first-child img {
+    width: 465px;
+    height: 258px;
+}
+.mod-content ul li{
+    margin-top: 20px;
+    position: relative;
+}
+.mod-content ul li .img_box{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.mod-content ul li .img_box img{
+    width: 50px;
+}
+.mod-content ul li .user_main{
+    margin-left: 70px;
+}
+.mod-content ul li .main_header{
+    position: relative;
+    font-size: 16px;
+}
+.main_header .user_name{
+    vertical-align: middle;
+    color: #333;
+}
+.main_header .time{
+    margin-top: 4px;
+    color: #999;
+}
+.mod-content ul li .approve{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 14px;
+    color: #999;
+
+}
+.mod-content ul li .user_content{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    line-height: 26px;
+    font-size: 14px;
+}
+.item4 .list{
+    margin-top: 20px;
+    text-align: center;
+    font-size:20px;
+}
+.item4 .list a{
+    cursor: pointer;
+    padding:0 5px;
+}
+.item4 .list p{
+    display: inline-block;
+    padding:0 5px;
+}
+.show{
+    font-size: 18px;
+    margin-top: 8px;
+    background: rgba(254,254,254,0.6);
+    padding: 10px;
+    text-align: center;
+}
+.show #show_con{
+    width: 400px;
+    border:1px solid #eee;
+    height: 100px;
+   
+    resize: none;
+}
+.show .show_btn{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+.footer{
+    background-color: #262426;
+    padding: 56px 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    margin-top: 82px;
+}
+.footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.footer p a{
+    color: #666;
+}

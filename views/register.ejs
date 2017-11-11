@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/register.css' />
+  </head>
+  <body>
+    <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+	<!-- 头部 -->
+		<div class = "header">
+			<div class = "header_content">
+				<a class = "site_logo" href="http://www.maoyan.com">美团</a>
+			</div>
+		</div>
+	
+	<!-- 内容主体 -->
+		<div class = "content">
+			<div class = "signup">
+				<form action="/users/register" method = "post">
+					<div class = "field phone">
+						<label>手机号</label>
+						<input type="text" name="phone" class="num_mobile">
+						<span class = "succ_info">注册成功后，全美团通用</span>
+						<span class = "warn_info"><i></i><em>请输入您的手机号码</em></span>
+					</div>
+					<div class = "field verify">
+						<label>图片验证码</label>
+						<input type="button" class = "verify_btn" value="免费获取短信动态码">
+					</div>
+					<div class = "field verify_info">
+						<label>短信动态码</label>
+						<input type="text">
+						<span class = "warn_info"><i></i><em>请输入您的手机号码</em></span>
+					</div>
+					<div class = "field password">
+					    <div class = "pw_strength">
+							<div class = "pw_strength_bar"></div>
+							<div class = "pw_strength_letter">
+								<span>弱</span>
+								<span>中</span>
+								<span class = "strong">强</span>
+							</div>
+					    </div>
+						<label>创建密码</label>
+						<input type="password" name="password" class = "pwd">
+						<span class = "warn_info"><i></i><em>请填写密码</em></span>
+					</div>
+					<div class = "field confirm">
+						<label>确认密码</label>
+						<input type="password" class = "confirm_input">
+						<span class = "warn_info"><i></i><em>请输入您的手机号码</em></span>
+					</div>
+					<div class = "field agree">
+						<!-- <input type="submit" class = "agree_btn" value="同意以下协议并注册"> -->
+						<a class = "agree_btn">同意以下协议并注册</a>
+					</div>
+				</form>
+			</div>
+			<div class = "term">
+				<a href="http://www.meituan.com/about/terms" target="_blank">《美团网用户协议》</a>
+			</div>
+		</div>
+	<!-- 尾部 -->
+		<div class = "footer">
+			<p class = "copyright">		
+       	 		©
+				<a class = "f1" href="http://www.meituan.com">meituan.com</a>
+				<a class = "f1" target="_blank" href="http://www.miibeian.gov.cn/">京ICP证070791号</a>
+				<span class = "f1">京公网安备11010502025545号</span>
+			</p>
+		</div>
+  </body>
+  <script src = "/js/jquery-1.10.1.min.js"></script>
+  <script src = "/js/register.js"></script>
+  <!-- <script src = "/js/ajax.js"></script> -->
+</html>

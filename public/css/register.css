@@ -1,0 +1,203 @@
+ body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font:400 14px/1.5 'Hiragino Sans GB','WenQuanYi Micro Hei',tahoma,sans-serif;
+	color: #666;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+em{
+	font-style: normal;
+}
+input{
+	/*border:0;*/
+	outline: 0;
+}
+.header{
+	width: 100%;
+	min-width: 980px;
+	color:#666;
+	border-bottom: 2px solid #e02025;
+}
+.header .header_content{
+	width: 980px;
+	margin:0 auto;
+	padding: 10px 0;
+}
+.header .header_content .site_logo{
+	display: block;
+	width: 133px;
+	height: 40px;
+	margin-top: -2px;
+	text-indent: -1000px;
+	overflow: hidden;
+	color: #ec454a;
+	background: url(/images/s0.meituan.net.png) no-repeat -536px -748px;
+}
+.content{
+	width: 980px;
+	min-height: 300px;
+	margin:0 auto 30px;
+	padding-top: 30px;
+}
+.content .signup .field{
+	position: relative;
+	padding: 8px 0 8px 110px;
+}
+.content .signup .field label{
+	position: absolute;
+	left: 0;
+	width: 100px;
+	padding-top: 6px;
+	font-size: 14px;
+	text-align: right;
+	color: #333;
+}
+.content .signup .field input{
+	width: 248px;
+	height: 24px;
+	padding: 5px;
+	border:1px solid #aaa;
+	line-height: 24px;
+	vertical-align: top;
+	font-size:14px;
+}
+.content .signup .field .succ_info{
+	display: inline-block;
+	margin-left: 4px;
+	padding: 6px 0;
+	line-height: 24px;
+	font-size: 12px;
+	color: #999;
+	vertical-align: top;
+}
+.content .signup .warn_info{
+	display: none;
+	/*display: inline-block;*/
+    margin-left: 4px;
+    padding: 6px 0;
+    line-height: 24px;
+    font-size: 12px;
+    color: #666;
+    vertical-align: top;
+    zoom: 1;
+}
+.warn_info i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: bottom;
+	background: url(/images/s0.meituan.net1.png) no-repeat 0 -453px;
+}
+.content .signup .verify{
+	padding: 0 0 0 110px;
+}
+.content .signup .verify label{
+	display: none;
+}
+.content .signup .verify .verify_btn{
+	width: auto;
+	padding: 1px 8px 0;
+	font-size: 12px;
+	color: #333;
+	background: #f4f4f4;
+	border:1px solid #e3e3e3;
+	border-bottom: 1px solid #aaa;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 2px;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	cursor: pointer;
+}
+.content .signup .verify .verify_btn:hover{
+	background: #fafafa;
+}
+.content .signup .password{
+	padding-bottom: 27px;
+}
+.content .signup .password .pw_strength{
+	position: absolute;
+	width: 260px;
+	top:50px;
+	left: 110px;
+	background: #eee;
+}
+.content .signup .password .pw_strength .pw_strength_bar{
+	background: #d3ebee;
+	height: 20px;
+	width: 0;
+	overflow: hidden;
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+}
+.content .signup .password .pw_strength .pw_strength_letter{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.content .signup .password .pw_strength .pw_strength_letter span{
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	width: 85px;
+	border-right: 2px solid #fff;
+	color: #fff;
+}
+.content .signup .password .pw_strength .pw_strength_letter .strong{
+	border-right: 0;
+}
+.content .signup .agree .agree_btn{
+	background: #e02025;
+	color: #fff;
+	padding:7px 20px 6px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.content .term{
+	position: relative;
+	padding:3px 10px 3px 110px;
+	margin:0 auto 8px;
+}
+.content .term a{
+	color: #ec454a;
+	font-size: 13px;
+}
+
+.footer{
+	text-align: center;
+	padding-top: 20px;
+	border:1px solid #eee;
+	border-bottom: 0;
+}
+.footer .copyright{
+	font-size: 12px;
+	font-family: initial;
+}
+.footer .copyright .f1{
+	font-size: 13px;
+	color: #999;
+}

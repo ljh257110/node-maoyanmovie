@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel='stylesheet' href='/css/comment.css' />
+</head>
+<body>
+	<div class = "header">
+		<div class = "header_inner">
+			<a href="" class ="logo"></a>
+			<div class="welcome">
+				<p>欢迎：</p><i><%= phone %></i>
+			</div>
+			
+		</div>
+	</div>
+	<div class="banner">
+	    <div class="content">
+	      <div class="picInfo">
+	        <div class="avater_shadow">
+	          <img class="avater" src="http://p0.meituan.net/movie/62e854fcfdae277751c3bae23ea110aa131670.jpg@464w_644h_1e_1c" alt="">
+	        </div>
+	      </div>
+	      <div class="celeInfo">
+	            <div class="movie">
+			      <h3 class="name">羞羞的铁拳</h3>
+			      <div class="ename ellipsis">Never Say Die</div>
+			      <ul>
+			        <li class="ellipsis">喜剧,爱情</li>
+			        <li class="ellipsis">
+			        中国大陆
+			          / 100分钟
+			        </li>
+			        <li class="ellipsis">2017-09-30大陆上映</li>
+			      </ul>
+	    		</div>
+	    <div class="buyBtn">
+	      <div class="action clearfix"">
+	        <a class="wish" >
+	          <div>
+	            <i class="icon wish-icon"></i>
+	              <span class="wish-msg">想看</span>
+	          </div>
+	        </a>
+	        <a class="score-btn">
+	          <div>
+	            <i class="icon score-btn-icon"></i>
+	            <span class="score-btn-msg" >
+	                评分
+	            </span>
+	          </div>
+	        </a>
+	      </div>
+	      <a class="buy" href="http://www.meituan.com/dianying/1198214?#content" target="_blank">立即购票</a>
+	    </div>
+
+	    <div class="movie_container">
+
+	        <div class="movie-index">
+	          <p class="movie-index-title">用户评分</p>
+	          <div class="movie-index-content score normal-score">
+	              <span class="index-left info-num">
+	                <span class="stonefont">9.1</span>
+	              </span>
+	              <div class="index-right">
+	                <div class="star-wrapper">
+	                  <div class="star-on" style="width:91%;"></div>
+	                </div>
+	                 <span class="score-num"><span class="stonefont">82.2万</span>人评分</span>
+	              </div>
+	          </div>
+	        </div>
+
+	        <div class="movie-index">
+	          <p class="movie-index-title">专业评分</p>
+	          <div class="movie-index-content score pro-score">
+	              <span class="no-info">暂无</span>
+	          </div>
+	        </div>
+
+	        <div class="movie-index">
+	          <p class="movie-index-title">累计票房</p>
+	          <div class="movie-index-content box">
+	              <span class="stonefont">20.54</span><span class="unit">亿</span>
+	          </div>
+	        </div>
+	    </div>
+
+	      </div>
+    </div>
+    </div>
+
+<!-- 内容 -->
+<div class="container" id="app">
+	<div class="main-content-container">
+		<div class="main-content">
+		    <div class="tab-container">
+		      	<div class="tab-title-container">
+		      			        <div class="tab-title active" data-act="tab-desc-click">介绍</div>
+		      			        <div class="tab-title " data-act="tab-celebrity-click">演职人员</div>
+		      			        <div class="tab-title tab-disabled" data-act="tab-award-click">奖项</div>
+		      			        <div class="tab-title " data-act="tab-img-click">图集</div>
+		     	</div>
+		    	<div class="tab-content-container">
+		        <div class="tab-desc tab-content active">
+
+		  				<div class="module">
+						    <div class="mod-title">
+						      <h3>剧情简介</h3>
+						    </div>
+							<div class="mod-content">
+							        <span class="dra">本片讲述了靠打假拳混日子的艾迪生（艾伦 饰），本来和正义感十足的体育记者马小（马丽 饰）是一对冤家，没想到因为一场意外的电击，男女身体互换。性别错乱后，两人互坑互害，引发了拳坛的大地震，也揭开了假拳界的秘密，惹来一堆麻烦，最终两人在“卷莲门”副掌门张茱萸（沈腾 饰），本来和正义感十足的体育记者马小（马丽指点下，向恶势力挥起了羞羞的铁拳。</span>
+
+							</div>
+		 				</div>
+		  				<div class="module">
+						    <div class="mod-title">
+						      <h3>演职人员</h3>
+						        <a class="more" href="#celebrity" data-act="all-actor-click">全部</a>
+						    </div>
+						    <div class="mod-content">
+						        <div class="celebrity-container">
+						          	<div class="celebrity-group">
+									  <div class="celebrity-type">
+									    导演
+									  </div>
+									  <ul class="celebrity-comment clearfix">
+											<li class="celebrity " >
+											  <a href="/films/celebrity/30243" target="_blank" class="portrait">
+											    <img class="default-img" alt="" src="http://p1.meituan.net/movie/cab9c22555ca2680db44b6e38b1923c4219072.png@128w_170h_1e_1c">
+											  </a>
+											  <div class="info">
+											    <a  target="_blank" class="name">
+											      宋阳
+											    </a>
+											  </div>
+											</li>
+										    <li class="celebrity " >
+												<a  target="_blank" class="portrait">
+													<img class="default-img" alt="" src="http://p0.meituan.net/movie/627e9eab501a72b720d82d7f61b7ff38177488.png@128w_170h_1e_1c">
+												</a>
+												<div class="info">
+												    <a  target="_blank" class="name">
+												      张吃鱼
+												    </a>
+												</div>
+											</li>
+									  </ul>
+									</div>
+							   		<div class="celebrity-group">
+									  <div class="celebrity-type">
+									    演员
+									  </div>
+									  <ul class="celebrity-comment clearfix">
+									      	<li class="celebrity actor" >
+											  <a  target="_blank" class="portrait">
+											    <img class="default-img" alt="" src="http://p0.meituan.net/movie/45c8843eb2d60fc30e3f94417496087b130112.jpg@128w_170h_1e_1c">
+											  </a>
+											  <div class="info">
+											    <a  target="_blank" class="name">
+											      艾伦
+											    </a>
+											      <br><span class="role">饰：艾迪生</span>
+											  </div>
+											</li>
+											<li class="celebrity actor">
+											  <a  target="_blank" class="portrait">
+											    <img class="default-img" alt="" src="http://p0.meituan.net/movie/1bb5ff6be14b82f2276848db525f70bf83983.jpg@128w_170h_1e_1c">
+											  </a>
+											  <div class="info">
+											    <a  target="_blank" class="name">
+											      马丽
+											    </a>
+											      <br><span class="role">饰：马小</span>
+											  </div>
+											</li>
+											<li class="celebrity actor" >
+											  <a  target="_blank" class="portrait">
+											    <img class="default-img" alt="" src="http://p0.meituan.net/movie/58589959c3b3aad994e5b2e9dcc135e5133105.jpg@128w_170h_1e_1c">
+											  </a>
+											  <div class="info">
+											    <a  target="_blank" class="name">
+											      沈腾
+											    </a>
+											      <br><span class="role">饰：张茱萸</span>
+											  </div>
+											</li>
+									  </ul>
+									</div>
+								</div>
+		  					</div>
+		  				</div>
+			 			<div class="module">
+						    <div class="mod-title">
+						      <h3>图集</h3>
+						        <a class="more" href="#img" data-act="all-photo-click">全部</a>
+						    </div>
+						    <div class="mod-content">
+						              <div class="album clearfix" data-act="movie-img-click">
+						                    <div class="img1"><img class="default-img" alt="" src="http://p1.meituan.net/movie/9bd0b6aa0a89a51d9e005cf7b3736572918602.jpg@465w_258h_1e_1c"></div>
+						                    <div class="img2"><img class="default-img" alt="" src="http://p1.meituan.net/movie/5ce8ee394a1f5ba9654c1c3afb01d85e978326.jpg@126w_126h_1e_1c"></div>
+						                    <div class="img3"><img class="default-img" alt="" src="http://p0.meituan.net/movie/ff4bf0db5cfbee5c78a1be3125ee638a474683.jpg@126w_126h_1e_1c"></div>
+						                    <div class="img4"><img class="default-img" alt="" src="http://p0.meituan.net/movie/638f4b9c579fffd92cbb74e949a6ad56422637.jpg@126w_126h_1e_1c"></div>
+						                    <div class="img5"><img class="default-img" alt="" src="http://p1.meituan.net/movie/045275b340d96994c4d59b37f7dfe17b473277.jpg@126w_126h_1e_1c"></div>
+						              </div>
+						    </div>
+			  			</div>
+						<div class="module item4">
+						    <div class="mod-title">
+						      <h3>热门短评</h3>
+						    </div>
+						    <div class="mod-content">
+						        <div class="comment-comment-container" data-hot="10">
+									<ul>
+									<% resData.forEach(function(item, index) { %>
+										<li>
+											<div class = "img_box">
+												<img class = "user_img" src=<%= item.img %> >
+											</div>
+											<div class = "user_main">
+												<div class = "main_header">
+													<p class = "user_name"><%= item.username %></p>
+													<p class = "time"><%= item.time %></p>
+												</div>
+												
+												<div class= "user_content"><%= item.content %></div>
+											</div>						
+										</li>
+									 <% }) %>
+									 
+									</ul>
+									<div class = "show">
+										<textarea name="" id="show_con" cols="30" rows="10"></textarea>
+										<button class = "show_btn">发表评论</button>
+									</div>
+									<div class = "list">
+										<a href="/comment?pageNo=1" class = "a1">首页</a>
+								        <a href="/comment?pageNo=<%= pageNo>1 ? parseInt(pageNo)-1 : 1 %>" >上一页</a>
+								        <p>第<%= pageNo %>页/共<%= totalPage %>页</p>
+								        <a href="/comment?pageNo=<%=pageNo<totalPage ? parseInt(pageNo)+1 : totalPage %>">下一页</a>
+								        <a href="/comment?pageNo=<%= totalPage %>">最后一页</a>
+								        <p>共<%= count %>条数据<p>
+
+									</div>						
+								</div>
+							</div>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 尾部 -->
+<div class="footer" style="visibility: visible;">
+    <p class="friendly-links">
+        友情链接 :
+        <a href="http://www.meituan.com" target="_blank">美团网</a>
+        <span></span>
+        <a href="http://i.meituan.com/client" data-query="utm_source=wwwmaoyan" target="_blank">美团下载</a>
+    </p>
+    <p>
+        ©2016
+        猫眼电影 maoyan.com
+        <a href="https://tsm.miit.gov.cn/pages/EnterpriseSearchList_Portal.aspx?type=0&amp;keyword=京ICP证160733号&amp;pageNo=1" target="_blank">京ICP证160733号</a>
+        <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备16022489号-1</a>
+        京公网安备 11010502030881号
+        <a href="/about/licence" target="_blank">网络文化经营许可证</a>
+        <a href="http://www.meituan.com/about/rules" target="_blank">电子公告服务规则</a>
+    </p>
+    <p>北京猫眼文化传媒有限公司</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+	<script src = "/js/jquery-1.10.1.min.js"></script>
+  <script src = "/js/comment.js"></script>
+</body>
+</html>

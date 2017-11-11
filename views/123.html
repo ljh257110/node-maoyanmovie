@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src = "jquery-1.10.1.min.js"></script>
+<style>
+.local_content{  
+    width:258px;  
+    height: 258px;  
+    background:#fff;  
+    border-radius:10px;  
+    padding:0px;   
+    margin:0 auto;  
+    border:1px solid #333;  
+    border-color:rgba(169,169,169,1);
+    overflow: hidden;  
+}  
+.upWrap{  
+    width:80px;  
+    height: 80px;  
+    margin:3px;  
+    float: left;  
+    position: relative;
+    overflow: hidden;  
+}  
+.upWrap > .imgWrap{  
+    position: absolute;  
+    height: 100%;  
+    width:100%;  
+    top:0;  
+    left:0;  
+}  
+.upWrap > .fileWrap > input[type=file]{  
+	position: absolute;  
+    height: 90%;  
+    width:90%;  
+    top:20px;  
+    left:10px;
+    z-index: 2;   
+}  
+.upWrap > .imgWrap{  
+    z-index: 1;  
+}  
+.upWrap > .imgWrap > img{  
+    width:100%;  
+    height: 100%;  
+}  
+.upedImg{  
+    z-index: 3 !important;  
+}  
+.upedImg > span.deleteImg{  
+    position:absolute;  
+    content: 'X';  
+    width:20px;  
+    font-size: 16px;  
+    color:#fff;  
+    cursor: pointer;
+    background:rgba(0,0,0,0.6);  
+    height:20px;  
+    text-align: center;  
+    line-height: 20px;  
+    right:0;  
+    top:0;  
+    z-index:4;  
+}  
+.clearFlex:after{  
+    clear: both;  
+    content: '';  
+    display: block;  
+    height: 0;  
+    zoom:1;  
+}  
+</style>
+</head>
+<body>
+<div class="local_content clearFlex">  
+            <form action="" enctype="multipart/form-data">  
+                <div class="upImg clearFlex">  
+                    <div class="imgOnloadWrap"></div>  
+                    <div class="upWrap">  
+                        <div class="fileWrap">  
+                            <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" onchange="upImg(this)"/>  
+                        </div>  
+                        <div class="imgWrap">  
+                            <img src="" alt="" />  
+                        </div>  
+                    </div>  
+                </div>  
+            </form>  
+        </div>  
+</body>
+<script type="text/javascript">
+	function upImg(obj){  
+    var imgFile = obj.files[0];  
+    console.log(imgFile);  
+    var img = new Image();  
+    var fr = new FileReader();  
+    fr.onload = function(){  
+        var htmlStr = '<div class="upWrap">';  
+        htmlStr += '<div class="fileWrap">';  
+        htmlStr += '<input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" onchange="upImg(this)"/>';  
+        htmlStr += '</div>';  
+        htmlStr += '<div class="imgWrap upedImg"><span class="deleteImg">X</span>';  
+        htmlStr += '<img src="'+fr.result+'" alt="" />';  
+        htmlStr += '</div>';  
+        htmlStr += '</div>';  
+        $('.imgOnloadWrap').append(htmlStr);  
+        obj.value = '';  
+    }  
+    fr.readAsDataURL(imgFile);  
+}  
+/*-----------------------------删除图片------------------------------*/  
+$(document).on('click','.upedImg .deleteImg',function(){  
+    //处理未来事件  
+    $(this).parent().parent().remove();  
+})  
+</script>
+</html>
